@@ -8,6 +8,13 @@
         </div>
     </div>
 </div>
+
+    @if (session('success'))
+        <div class="alert alert-success">
+            {{ session ('success') }}
+        </div>
+    @endif   
+
 <table>
     <tr class="table table-bordered">
         <th>Id</th>
