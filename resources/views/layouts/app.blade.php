@@ -29,8 +29,19 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
 
+                            <a id="ManageDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                Posts <span class="caret"></span>
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="ManageDropdown">
+                                <a class="nav-link" href="{{ route('posts.index') }}">{{ ('Posts Index') }}</a>
+                                <a class="nav-link" href="{{ route('posts.create') }}">{{ ('Create new Post') }}</a>
+                            </div>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
